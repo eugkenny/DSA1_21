@@ -1,6 +1,6 @@
 package dsa.util;
 
-public class ArrayStackOfStrings implements StackOfStrings{
+public class ArrayStackOfStrings implements StackOfStrings {
 
     String [] stack;
     int top;
@@ -21,6 +21,7 @@ public class ArrayStackOfStrings implements StackOfStrings{
 
     private void resize(int newCapacity) {
         String [] temp = new String[newCapacity];
+        //System.arraycopy(stack, 0, temp, 0, stack.length);
         for(int i = 0; i < stack.length; i++){
             temp[i] = stack[i];
         }

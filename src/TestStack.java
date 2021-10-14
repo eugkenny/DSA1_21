@@ -1,8 +1,8 @@
-import dsa.util.ArrayStackOfStrings;
+import dsa.util.*;
 
 public class TestStack {
     public static void main(String [] args){
-        ArrayStackOfStrings asos = new ArrayStackOfStrings();
+        StackOfStrings asos = new LinkedStackOfStrings();
 
         asos.push("A");
         asos.push("B");
@@ -23,6 +23,6 @@ public class TestStack {
         }
         System.out.println();
 
-        asos.pop();
+        //asos.pop();
     }
 }
