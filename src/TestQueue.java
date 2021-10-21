@@ -3,7 +3,7 @@ import dsa.employee.*;
 
 public class TestQueue {
     public static void main(String[] args) {
-        QueueOfObjects qoo = new LinkedQueueOfObjects();
+        Queue<String> qoo = new LinkedQueue();
 
         Employee joe = new HourlyWorker("Joe", 123, 10, 20.00);
         Employee jane = new SalaryWorker("Jane", 456, 30000.00);
@@ -16,8 +16,8 @@ public class TestQueue {
         System.out.println("Is Empty?: " + qoo.isEmpty());
         System.out.println("Size: " + qoo.size());
 
-        qoo.enqueue(joe);
-        qoo.enqueue(jane);
+        //qoo.enqueue(joe);
+        //qoo.enqueue(jane);
         String s = (String)qoo.dequeue();
 
         System.out.println("Size: " + qoo.size());

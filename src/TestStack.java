@@ -2,7 +2,7 @@ import dsa.util.*;
 
 public class TestStack {
     public static void main(String [] args){
-        StackOfStrings asos = new LinkedStackOfStrings();
+        Stack<String> asos = new ArrayStack();
 
         asos.push("A");
         asos.push("B");
@@ -22,6 +22,10 @@ public class TestStack {
             System.out.print(asos.pop() + ", ");
         }
         System.out.println();
+
+        for (String item : asos) {
+            System.out.print(item + ", ");
+        }
 
         //asos.pop();
     }
