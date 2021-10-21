@@ -1,5 +1,7 @@
 package dsa.util;
 
+import java.util.Iterator;
+
 public class LinkedQueue<E> implements Queue<E>{
 
     private class Node{
@@ -55,5 +57,10 @@ public class LinkedQueue<E> implements Queue<E>{
     @Override
     public int size() {
         return size;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        return null;
     }
 }
